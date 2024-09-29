@@ -17,9 +17,17 @@
     background-color: #9fd4e9;
     justify-content: center;
     align-items: center;
-    padding:1.7rem 4rem 1.7rem 2rem;
-    gap:7rem;
+   
     
+}
+.navigation{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:7rem;
+    padding:1.7rem 4rem 1.7rem 2rem;
+
 }
 
 .logo>h1{
@@ -31,6 +39,7 @@
 }
 .hamburger{
     display: none;
+    font-size: 1.6rem;
 }
 .navigation-mid{
     /* background-color: orange; */
@@ -73,7 +82,6 @@
    font-size: 1rem;
    padding:0.54rem 0;
    cursor: pointer;
-   /* background-color: #9fd4e9; */
    border: none;
    
 }
@@ -768,12 +776,6 @@ font-size: 1.2rem;
     width:3rem;
 }
 
-.active-users{
-   
-    
-    
-}
-
 .active-users>h3{
 font-size: 4rem;
 }
@@ -782,10 +784,6 @@ padding: 0rem 0.25rem;
 display: flex;
 gap:0.9rem;
 font-size: 1.3rem;
-}
-
-.reviews{
-    
 }
 
 .reviews>h3{
@@ -798,9 +796,6 @@ gap:0.9rem;
 font-size: 1.3rem;
 }
 
-.transaction-process{
-    
-}
 .transaction-process>h3{
     font-size: 4rem;
 }
@@ -1153,4 +1148,26 @@ border-radius: 0.5rem;
 }
 .footer-line>.footer-hr-line{
     width:70rem;
+}
+
+@media (max-width:320px){
+    .hero-u-section{
+        display: flex;
+        background-color: red;
+        justify-content:space-between;
+        align-items: center;
+        /* padding:2rem;    */
+    }
+    .navigation{
+        display: flex;
+    
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    
+    .navigation-mid,.navigation-right{
+        display: none;
+    }
 }
